@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#timer {
+    padding: 20px;
+    font-size: 24px;
+    background-color: lightgrey;
+    display: inline-block;
+    cursor: pointer;
+}

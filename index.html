@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyStep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="view1" class="view active">
+        <h1>BabyStep!</h1>
+        <h2>Stop Wishing, Start Doing. Buddha</h2>
+        <img src="logo.png" alt="BabyStep Logo">
+        <button id="goButton">Go!</button>
+    </div>
+
+    <div id="view2" class="view hidden">
+        <h1>Goal</h1>
+        <h2>What Important do You want to start doing right Now, but still Procrastinate?</h2>
+        <input type="text" id="mainTask" placeholder="e.g., Write an essay">
+        <button id="backToView1">Back</button>
+        <button id="nextToView3">Next</button>
+    </div>
+
+    <div id="view3" class="view hidden">
+        <h1>1st step</h1>
+        <h2>What is Your 1st, most EASY, most SHORT step to begin?</h2>
+        <input type="text" id="firstStep" placeholder="e.g., Create a new Word document">
+        <button id="backToView2">Back</button>
+        <button id="nextToView4">Next</button>
+    </div>
+
+    <div id="view4" class="view hidden">
+        <h1>Do it</h1>
+        <h2>Touch Timer again when Done</h2>
+        <div id="timer">Start Timer</div>
+        <p id="stepDisplay"></p>
+        <button id="nextToView5" class="hidden">Next</button>
+    </div>
+
+    <div id="view5" class="view hidden">
+        <h1>Finished</h1>
+        <h2>Do you need more motivation?</h2>
+        <p id="mainTaskDisplay"></p>
+        <div>
+            <label for="motivationYes">Yes</label>
+            <input type="radio" id="motivationYes" name="motivation" value="yes" checked>
+            <label for="motivationNo">No</label>
+            <input type="radio" id="motivationNo" name="motivation" value="no">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Title</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody id="stepsTableBody">
+            </tbody>
+        </table>
+        <button id="nextToView3Again">Next</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
